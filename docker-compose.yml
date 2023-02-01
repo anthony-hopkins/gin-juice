@@ -1,0 +1,12 @@
+version: "3.9"
+
+services:
+  <APP>:
+    build:
+      context: .
+    volumes:
+      - ./<APP>:/opt/<APP>
+    ports:
+      - "80:8080"
+    command: >
+      sh -c "cd /opt/<APP>/ && go run ."
