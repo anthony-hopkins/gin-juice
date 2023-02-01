@@ -3,7 +3,6 @@
 # This script handles setting up the project directory and providing the necessary pieces to get started building
 # a web application in GO and the Gin framework.
 
-# GLOBALS
 # ARGS check for sanity.
 if [[ "$#" -ne 1 ]]
 then
@@ -15,4 +14,6 @@ fi
 # GLOBALS
 APPNAME="${1}"
 
-echo "${APPNAME}"
+# Zip extraction and cleanup
+mkdir ./${APPNAME}
+cp -a ./gin-juice-main/* ./${APPNAME}
