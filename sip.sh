@@ -21,7 +21,7 @@ cp -r ./gin-juice-main/gin-juice/* ./${APPNAME}/
 rm -rf {./gin-juice*,README.md,tmp.zip}
 
 # Use sed to replace <APP> stub with APPNAME
-sed -i "s/<APP>/${APPNAME}/g" ./*/*
+sed -i "s/<APP>/${APPNAME}/g" ./{Dockerfile,docker-compose.yml,./${APPNAME}/go.mod}
 
 # Install Gin
 cd ./${APPNAME} && go get github.com/gin-gonic/gin
