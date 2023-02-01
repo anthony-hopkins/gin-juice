@@ -21,7 +21,8 @@ cp -r ./gin-juice-main/gin-juice/* ./${APPNAME}/
 rm -rf {./gin-juice*,README.md,tmp.zip}
 
 # Install Gin
-go get github.com/gin-gonic/gin
+cd ./${APPNAME} && go get github.com/gin-gonic/gin
+cd ..
 
 # Self destruction
 rm -f ./sip.sh
