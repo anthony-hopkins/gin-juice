@@ -15,5 +15,6 @@ fi
 APPNAME="${1}"
 
 # Zip extraction and cleanup
+echo "Building project structure for ${APPNAME}"
 mkdir ./${APPNAME}
-cp -a ./gin-juice-main/* ./${APPNAME}
+cp -r ./gin-juice-main/gin-juice/* ./${APPNAME}/
