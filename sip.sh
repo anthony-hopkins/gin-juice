@@ -15,3 +15,4 @@ fi
 # GLOBALS
 APPNAME="${1}"
 
+echo "${APPNAME}"
