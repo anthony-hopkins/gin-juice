@@ -19,7 +19,7 @@ https://docs.docker.com/get-docker/
 * Ensure you are in an empty directory where you are ready to start work.
 * Copy the below string and replace <GIN_PROJECT> with your own project name.
 ```
-curl -L -o tmp.zip https://github.com/anthony-hopkins/django_postgresql_docker_start/archive/refs/heads/main.zip && unzip tmp.zip && cp -a ./django_postgresql_docker_start-main/. . && bash ./dpds-setup.sh <DJANGO_PROJECT>
+curl -L -o tmp.zip https://github.com/anthony-hopkins/gin-juice/archive/refs/heads/main.zip && unzip tmp.zip && cp -a ./gin-juice-main/. . && bash ./sip.sh <GIN_PROJECT>
 ```
 
 ## Authors
