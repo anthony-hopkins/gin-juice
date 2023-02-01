@@ -20,5 +20,8 @@ mkdir ./${APPNAME}
 cp -r ./gin-juice-main/gin-juice/* ./${APPNAME}/
 rm -rf {./gin-juice*,README.md,tmp.zip}
 
+# Install Gin
+go get github.com/gin-gonic/gin
+
 # Self destruction
 rm -f ./sip.sh
