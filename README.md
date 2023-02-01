@@ -25,6 +25,15 @@ cp -r ./gin-juice-main/* . && \
 bash ./sip.sh <GIN_PROJECT>
 ```
 
+## What now?
+You can run the follow command to make sure your environment is properly set up. It will provide you a simple hello gin page:
+```
+docker-compose up
+```
+Just navigate to http://localhost:80 and you should see your gin app running within it's container.
+
+Now all that is left to do is build something cool. Have fun!
+
 ## Authors
 
 Contributors names and contact info
