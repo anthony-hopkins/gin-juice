@@ -32,6 +32,8 @@ docker-compose up
 ```
 Just navigate to http://localhost:80 and you should see your gin app running within it's container.
 
+Simply make changes to your web application and rerun your docker-compose 
+
 Now all that is left to do is build something cool. Have fun!
 
 ## Authors
