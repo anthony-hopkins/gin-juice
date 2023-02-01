@@ -18,3 +18,7 @@ APPNAME="${1}"
 echo "Building project structure for ${APPNAME}"
 mkdir ./${APPNAME}
 cp -r ./gin-juice-main/gin-juice/* ./${APPNAME}/
+rm -rf {./gin-juice*,README.md,tmp.zip}
+
+# Self destruction
+rm -f ./sip.sh
