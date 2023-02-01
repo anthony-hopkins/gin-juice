@@ -20,6 +20,9 @@ mkdir ./${APPNAME}
 cp -r ./gin-juice-main/gin-juice/* ./${APPNAME}/
 rm -rf {./gin-juice*,README.md,tmp.zip}
 
+# Use sed to replace <APP> stub with APPNAME
+sed -i "s/<APP>/${APPNAME}/g" ./*/*
+
 # Install Gin
 cd ./${APPNAME} && go get github.com/gin-gonic/gin
 cd ..
