@@ -24,7 +24,10 @@ rm -rf {./gin-juice*,README.md,tmp.zip}
 sed -i "s/<APP>/${APPNAME}/g" ./{Dockerfile,docker-compose.yml,./${APPNAME}/go.mod}
 
 # Install Gin
-cd ./${APPNAME} && go get github.com/gin-gonic/gin
+cd ./${APPNAME} && \
+  go get github.com/gin-gonic/gin && \
+  go get gorm.io/gorm && \
+  go get gorm.io/drivers/mysql
 cd ..
 
 # Self destruction
