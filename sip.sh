@@ -27,7 +27,7 @@ sed -i "s/<APP>/${APPNAME}/g" ./{Dockerfile,docker-compose.yml,./${APPNAME}/go.m
 cd ./${APPNAME} && \
   go get github.com/gin-gonic/gin && \
   go get gorm.io/gorm && \
-  go get gorm.io/drivers/mysql
+  go get gorm.io/driver/mysql
 cd ..
 
 # Self destruction
