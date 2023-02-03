@@ -1,12 +1,22 @@
 version: "3.9"
 
 services:
-  <APP>:
+  notes:
     build:
       context: .
     volumes:
-      - ./<APP>:/opt/<APP>
+      - ./notes:/opt/notes
     ports:
       - "80:8080"
     command: >
-      sh -c "cd /opt/<APP>/ && go run ."
+      sh -c "cd /opt/notes/ && go run ."
+    depends_on:
+      - db
+
+  db:
+    image: mysql:8.0-debian
+    environment:
+      MYSQL_RANDOM_ROOT_PASSWORD: yes
+      MYSQL_USER: "notes-user"
+      MYSQL_PASSWORD: "password"
+      MYSQL_DATABASE: "notes"
