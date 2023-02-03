@@ -16,7 +16,7 @@ services:
   db:
     image: mysql:8.0-debian
     environment:
-      MYSQL_RANDOM_ROOT_PASSWORD: yes
+      MYSQL_RANDOM_ROOT_PASSWORD: "yes"
       MYSQL_USER: "notes-user"
       MYSQL_PASSWORD: "password"
       MYSQL_DATABASE: "notes"
